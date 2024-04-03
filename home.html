@@ -51,17 +51,7 @@
     <div class="content">
       <div class="content-table flex-column">
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Intro with Video-->
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <p class="text">
-              Multimodal imaging has a great utility in cancer research by concurrently providing anatomical, functional, 
-              and molecular information in live animals. During preclinical imaging of small animals like mice, anesthesia 
-              is required to inhibit animal movement and improve image quality. However, due to their large surface area 
-              relative to body weight, mice, especially nude mice, are more susceptible to hypothermia when under anesthesia.
-            </p>
-          </div>
-        </div>
+        <!--Start Abstract with Video-->
         <div class="flex-row">
           <div class="flex-item flex-item-stretch-2 flex-column">
             <p class="text"> 
@@ -91,38 +81,74 @@
         </div>
         <!--End Intro with Videos-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Text Only-->
+        <!--Start Introduction-->
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="introduction">Introduction</h2>
             <hr>
             <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
+              In-vivo imaging using micro-computed tomography (micro-CT) has been a critical tool for preclinical research by providing 
+              noninvasive, high-resolution 3D imaging. This technology enables detailed visualization of internal structures, from low 
+              contrast soft tissues, such as lipid and water, to high contrast materials, such as calcium and iodine, allowing for precise 
+              material identification and quantification. Micro-CT has thus become a powerful imaging technique for multiple biological 
+              and biomedical research.
             </p>
             <p class="text">
-              Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-              vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos
-              ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
-              animi, id est laborum et dolorum fuga.
+              During micro-CT imaging, small animals, commonly mice, are anesthetized and positioned on a scanning table to prevent 
+              movement and minimize examination time. However, the high surface area-to-body weight ratio in these small animals 
+              predisposes them to hypothermia under anesthesia. Therefore, maintaining a constant body temperature near the animal’s 
+              normal range during imaging is a critical consideration.
             </p>
-            <h3>Break Long URL</h3>
             <p class="text">
-              <a class="break-long-url" target="_blank" href="https://www.google.com/maps/place/Carnegie+Mellon+University/@40.4430576,-79.9431263,17z/data=!4m5!3m4!1s0x8834f21f58679a9f:0x88716b461fc4daf4!8m2!3d40.4428753!4d-79.9430922">https://www.google.com/maps/place/Carnegie+Mellon+University/@40.4430576,-79.9431263,17z/data=!4m5!3m4!1s0x8834f21f58679a9f:0x88716b461fc4daf4!8m2!3d40.4428753!4d-79.9430922</a>
+              The key component in achieving this is the design of the scanning table. The table must be equipped with a heating 
+              system that not only maintains the required temperature but is also compatible with the imaging system. Particularly challenging 
+              is the requirement for the heating subsystem to be devoid of metallic parts within the imaging field. Although the 
+              use of photon-counting provides way to reduce metal artefact such as beam hardening during reconstruction, avoiding the use 
+              of metal is preferable for achieving optimal imaging results. Another critical design constraint is the need to minimize the 
+              dimensions of the scanning table. An increase in the size of the scanning table directly translates to an enlarged scan 
+              dimension, which can result in prolonged examination times. This, in turn, leads to an increased dose of radiation exposure 
+              to the subject. Therefore, to minimize the radiation exposure for mice, it is essential that the scanning table be designed 
+              as compact as possible, ideally approximating, slightly larger than, the size of the mouse itself.
             </p>
-            
           </div>
         </div>
-        <!--End Text Only-->
+        <!--End Introduction-->
         <!-------------------------------------------------------------------------------------------->
+        <!--Start Solution-->
         <div class="flex-row">
           <div class="flex-item flex-column">
+            <h2 id="solution">Non-metalic Heating Pad Solution</h2>
+            <hr>
+            <h3>3D-printed Table</h3>
+            <p class='text'>
+              In addressing the need for a compact table size for micro-CT scanning, we have constructed a mouse scanning table using 
+              PLA (Polylactic Acid) 3D printing technology for the base structure. As shown in Figure 1, the designing of this table 
+              includes a base that connects to the gantry of the scanner, a supporting bar, and a bed. The supporting bar extends from 
+              the base to hold the bed on which the mouse is placed during scanning. The dimensions of the table are within 50mm in 
+              width, 60mm in height, and 200mm in length, in which the cross-section area is slightly larger than the average size of 
+              a mouse, ensuring it is compact to facilitate short imaging duration. Additionally, the table is designed to be detachable 
+              from the scanner gantry, providing versatility for different projects that may require the scanner.
+            </p>
+            <a class="image adaptive-image" style="background-image: url('image/assembly1.png'); min-height: 150px;" 
+              href="image/assembly1.png" target="_blank"></a>
+            <p class="image-caption">Image Caption</p>
             <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi.
+              Building upon this 3D printed structure, we have explored various methods for integrating a heating subsystem. In biomedical 
+              research, the commonly used techniques to maintain animal warmth include air heating, fluid heating, and heating pad systems. 
+              However, considering the specific constraints of our project, the fluid heating method was ruled out due to the risk of fluid 
+              leakage, which could potentially damage the scanner. Consequently, we have focused our attention on the remaining two methods 
+              — air heating and heating pad systems.
+            </p>
+            
+            <h3>Non-metalic Heating Pad</h3>
+            <p class="text">
+              The heating pad system primarily features a non-metallic heating pad, which is a carbon nanotubebased flexible electrothermal 
+              film heater with high heating efficiency. It has low operational noise and the emission of farinfrared radiation, ensuring 
+              that it does not affect the imaging results. This heating pad is composed of three distinct layers, with the central layer 
+              being the heating element. This layer is designed to provide uniform heating across its surface, ensuring consistent 
+              temperature distribution. The flexible nature of the pad allows for easy adjustment and customization to fit the dimensions 
+              of the scanning bed perfectly. An extension cord will be connected to the heating pad at the gantry, serving as the power 
+              source for the heating pad.
             </p>
             <h2>Heading 1</h2>
             <hr>
